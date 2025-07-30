@@ -203,7 +203,7 @@ function initializeScrollAnimations() {
         }
     });
 }
-
+/*
 // ===== LECTURE D'ARTICLES =====
 function initializeReadMore() {
     const readMoreLinks = document.querySelectorAll('.blog-read-more');
@@ -299,5 +299,5 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeArticleModal();
     }
-});
+}); */
 
