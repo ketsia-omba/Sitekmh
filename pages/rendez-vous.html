@@ -350,3 +350,40 @@
 </body>
 </html>
 
+
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const firstName = form.firstName.value;
+            const lastName = form.lastName.value;
+            const phone = form.phone.value;
+            const email = form.email.value;
+            const service = form.service.options[form.service.selectedIndex].text;
+            const stylist = form.stylist.options[form.stylist.selectedIndex].text;
+            const date = form.date.value;
+            const time = form.time.value;
+            const message = form.message.value;
+
+            let whatsappMessage = `*Nouveau Rendez-vous KMH*\n\n`;
+            whatsappMessage += `*Client(e):* ${firstName} ${lastName}\n`;
+            whatsappMessage += `*Téléphone:* ${phone}\n`;
+            if (email) whatsappMessage += `*Email:* ${email}\n`;
+            whatsappMessage += `*Service Souhaité:* ${service}\n`;
+            whatsappMessage += `*Coiffeuse Préférée:* ${stylist}\n`;
+            whatsappMessage += `*Date:* ${date}\n`;
+            whatsappMessage += `*Heure:* ${time}\n`;
+            if (message) whatsappMessage += `*Message:* ${message}\n`;
+
+            const whatsappURL = `https://wa.me/243819525525?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappURL, '_blank');
+
+            // Optionnel: Afficher un message de succès ou réinitialiser le formulaire
+            alert('Votre demande de rendez-vous a été envoyée via WhatsApp !');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
