@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre Rendez-vous - Élégance Beauté | Réservation en Ligne</title>
+    <meta name="description" content="Prenez rendez-vous facilement en ligne avec Élégance Beauté. Réservez votre créneau pour vos soins de coiffure à Kinshasa.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="lg">
+                        <div class="photo1">
+                            <img class="photo" src="/salon-coiffure-kinshasa/assets/images/kmh.jpg" alt="kmh" width="40" height="40">
+                        </div>
+                        <h1>KMH</h1>
+                    </div>
+                <span>Salon de Coiffure <br>& maquillage</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="../index.html" >Accueil</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="rendez-vous.html" class="active">Rendez-vous</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="https://wa.me/243123456789" class="whatsapp-btn" target="_blank">
+                        <span>WhatsApp</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="nav-mobile" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/a-propos.html">À Propos</a></li>
+                <li><a href="pages/prestations.html">Prestations</a></li>
+                <li><a href="pages/galerie.html">Galerie</a></li>
+                <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                <li><a href="pages/rendez-vous.html">Rendez-vous</a></li>
+                <li><a href="pages/avis.html">Avis</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Prendre Rendez-vous</h1>
+                <p>Réservez votre créneau en quelques clics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de Rendez-vous -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-content">
+                <div class="appointment-info">
+                    <h2>Réservez Votre Moment Beauté</h2>
+                    <p>Remplissez le formulaire ci-contre pour prendre rendez-vous. Nous vous confirmerons votre créneau dans les plus brefs délais.</p>
+                    
+                    <div class="appointment-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <div class="benefit-text">
+                                <h4>Réservation Rapide</h4>
+                                <p>Prenez rendez-vous en moins de 2 minutes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">✅</div>
+                            <div class="benefit-text">
+                                <h4>Confirmation Immédiate</h4>
+                                <p>Recevez une confirmation par SMS et email</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔄</div>
+                            <div class="benefit-text">
+                                <h4>Modification Facile</h4>
+                                <p>Modifiez ou annulez jusqu'à 24h avant</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-alternatives">
+                        <h3>Autres Moyens de Contact</h3>
+                        <div class="contact-methods">
+                            <a href="tel:+243123456789" class="contact-method">
+                                <span class="contact-icon">📞</span>
+                                <span>+243 123 456 789</span>
+                            </a>
+                            <a href="https://wa.me/243123456789" class="contact-method">
+                                <span class="contact-icon">💬</span>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="appointment-form-container">
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Souhaité *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="coupe">Coupe Moderne</option>
+                                <option value="coupe-couleur">Coupe + Coloration</option>
+                                <option value="coloration">Maquillage simple</option>
+                                <option value="soins">Soins Capillaires</option>
+                                <option value="tresses">Tresses Africaines</option>
+                                <option value="extensions">Maquillage eévénement</option>
+                                <option value="evenement">Coiffure Événement</option>
+                                <option value="forfait-decouverte">Forfait Découverte</option>
+                                <option value="forfait-elegance">Forfait Élégance</option>
+                                <option value="forfait-prestige">Forfait Prestige</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stylist">Coiffeuse Préférée</label>
+                            <select id="stylist" name="stylist">
+                                <option value="">Pas de préférence</option>
+                                <option value="Ketsia">Ketsia (Fondatrice)</option>
+                                <option value="amina">Gemima(Spécialiste Tresses)</option>
+                                <option value="chloe">Priscille (Maquilleuse)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date Souhaitée *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Heure Souhaitée *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Sélectionnez une heure</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optionnel)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Précisez vos souhaits, allergies ou demandes particulières..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir les offres et actualités par email
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                J'accepte les <a href="cgv.html" target="_blank">conditions générales</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Confirmer le Rendez-vous</span>
+                            <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Horaires -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Horaires d'Ouverture</h2>
+                <p>Nous sommes à votre disposition aux heures suivantes</p>
+            </div>
+            
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Lundi - Vendredi</h3>
+                    <p class="hours-time">8h00 - 18h00</p>
+                    <p class="hours-note">Service complet</p>
+                </div>
+                
+                <div class="hours-card">
+                    <h3>Samedi</h3>
+                    <p class="hours-time">8h00 - 16h00</p>
+                    <p class="hours-note">Service complet</p>
+                </div>
+                
+                <div class="hours-card special">
+                    <h3>Dimanche</h3>
+                    <p class="hours-time">Sur rendez-vous</p>
+                    <p class="hours-note">Événements spéciaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ Rendez-vous -->
+    <section class="appointment-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Tout ce que vous devez savoir sur la prise de rendez-vous</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Puis-je annuler ou reporter mon rendez-vous ?</h4>
+                    <p>Oui, vous pouvez annuler ou reporter votre rendez-vous jusqu'à 24h avant l'heure prévue. Contactez-nous par téléphone ou WhatsApp.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Combien de temps à l'avance dois-je réserver ?</h4>
+                    <p>Nous recommandons de réserver au moins 48h à l'avance, surtout pour les week-ends et les services longs comme les colorations.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Que se passe-t-il si j'arrive en retard ?</h4>
+                    <p>Un retard de plus de 15 minutes peut entraîner un report de votre rendez-vous selon les disponibilités du salon.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Puis-je choisir ma coiffeuse ?</h4>
+                    <p>Absolument ! Vous pouvez spécifier votre préférence lors de la réservation. Nous ferons notre possible pour satisfaire votre demande.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ketsia Make-up Hair "KMH"</h3>
+                    <p>Le salon de coiffure féminin de référence à Kinshasa</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>Lundi - Vendredi: 8h00 - 18h00</li>
+                        <li>Samedi: 8h00 - 16h00</li>
+                        <li>Dimanche: Sur rendez-vous</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 C/Limete, Q/Mombele AV/Mombele 78, Kinshasa</li>
+                        <li>📞 +243 829525525</li>
+                        <li>✉️ contact@KMH.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ketsia Make-up Hair "KMH". Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/rendez-vous.js"></script>
+</body>
+</html>
+

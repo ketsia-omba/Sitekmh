@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Beauté - Élégance Beauté | Conseils Coiffure et Tendances</title>
+    <meta name="description" content="Découvrez nos conseils beauté, tendances coiffure et astuces pour prendre soin de vos cheveux. Blog du salon Élégance Beauté à Kinshasa.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="lg">
+                        <div class="photo1">
+                            <img class="photo" src="/salon-coiffure-kinshasa/assets/images/kmh.jpg" alt="kmh" width="40" height="40">
+                        </div>
+                        <h1>KMH</h1>
+                    </div>
+                <span>Salon de Coiffure <br>& maquillage</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="../index.html" >Accueil</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="rendez-vous.html">Rendez-vous</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="https://wa.me/243123456789" class="whatsapp-btn" target="_blank">
+                        <span>WhatsApp</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="nav-mobile" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/a-propos.html">À Propos</a></li>
+                <li><a href="pages/prestations.html">Prestations</a></li>
+                <li><a href="pages/galerie.html">Galerie</a></li>
+                <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                <li><a href="pages/rendez-vous.html">Rendez-vous</a></li>
+                <li><a href="pages/avis.html">Avis</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Blog Beauté</h1>
+                <p>Conseils, tendances et astuces pour sublimer vos cheveux</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Filtres Blog -->
+    <section class="blog-filters-section">
+        <div class="container">
+            <div class="blog-filters">
+                <button class="filter-btn active" data-category="all">Tous les Articles</button>
+                <button class="filter-btn" data-category="conseils">Conseils</button>
+                <button class="filter-btn" data-category="tendances">Tendances</button>
+                <button class="filter-btn" data-category="soins">Soins</button>
+                <button class="filter-btn" data-category="evenements">Événements</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Articles Blog -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-category="conseils">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffure_moderne_1.jpg" alt="Conseils cheveux crépus">
+                        <div class="blog-category">Conseils</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">15 Janvier 2025</span>
+                            <span class="blog-author">Par ketsia</span>
+                        </div>
+                        <h3>5 Conseils pour Prendre Soin de Vos Cheveux Crépus</h3>
+                        <p>Découvrez nos astuces d'expertes pour maintenir vos cheveux crépus en pleine santé et révéler leur beauté naturelle...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-category="tendances">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffure_moderne_2.jpg" alt="Tendances coiffure 2025">
+                        <div class="blog-category">Tendances</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 Janvier 2025</span>
+                            <span class="blog-author">Par gemima</span>
+                        </div>
+                        <h3>Les Tendances Coiffure 2025 à Adopter</h3>
+                        <p>Cette année, les coupes courtes et les colorations naturelles sont à l'honneur. Découvrez les styles qui feront sensation...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-category="soins">
+                    <div class="blog-image">
+                        <img src="../assets/images/salon_elegant_1.jpg" alt="Soins capillaires naturels">
+                        <div class="blog-category">Soins</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 Janvier 2025</span>
+                            <span class="blog-author">Par ketsia</span>
+                        </div>
+                        <h3>Masques Capillaires Naturels : Nos Recettes Maison</h3>
+                        <p>Préparez vos propres masques nourrissants avec des ingrédients naturels. Des recettes simples et efficaces...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-category="conseils">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffure_africaine_1.jpg" alt="Tresses protectrices">
+                        <div class="blog-category">Conseils</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">28 Décembre 2024</span>
+                            <span class="blog-author">Par ketsia</span>
+                        </div>
+                        <h3>Tresses Protectrices : Guide Complet pour Débutantes</h3>
+                        <p>Apprenez tout sur les tresses protectrices : techniques, entretien et bienfaits pour vos cheveux naturels...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-category="evenements">
+                    <div class="blog-image">
+                        <img src="../assets/images/salon_elegant_2.jpg" alt="Coiffure mariage">
+                        <div class="blog-category">Événements</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">20 Décembre 2024</span>
+                            <span class="blog-author">Par ketsia</span>
+                        </div>
+                        <h3>Formation coiffure</h3>
+                        <p>Devenez experte en coiffure en suvant notre formation annuelle en coiffure...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-category="tendances">
+                    <div class="blog-image">
+                        <img src="../assets/images/salon_elegant_3.jpg" alt="Couleurs cheveux hiver">
+                        <div class="blog-category">Tendances</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">15 Décembre 2024</span>
+                            <span class="blog-author">Par Chloé</span>
+                        </div>
+                        <h3>Couleurs Cheveux Hiver : Les Nuances qui Réchauffent</h3>
+                        <p>L'hiver est la saison parfaite pour oser des couleurs profondes et chaleureuses. Découvrez nos suggestions...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-category="soins">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffeuse_professionnelle.jpg" alt="Routine capillaire">
+                        <div class="blog-category">Soins</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 Décembre 2024</span>
+                            <span class="blog-author">Par Marie-Claire</span>
+                        </div>
+                        <h3>Routine Capillaire : Les Étapes Essentielles</h3>
+                        <p>Une routine adaptée est la clé de cheveux en bonne santé. Découvrez les étapes indispensables selon votre type de cheveux...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-card" data-category="conseils">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffeuse_professionnelle_2.jpg" alt="Choisir sa coiffeuse">
+                        <div class="blog-category">Conseils</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 Décembre 2024</span>
+                            <span class="blog-author">Par Chloé</span>
+                        </div>
+                        <h3>Comment Bien Choisir Sa Coiffeuse ?</h3>
+                        <p>Trouver la coiffeuse parfaite est essentiel pour obtenir le résultat souhaité. Nos conseils pour faire le bon choix...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="blog-card" data-category="evenements">
+                    <div class="blog-image">
+                        <img src="../assets/images/coiffeuse_professionnelle_3.jpg" alt="Coiffure soirée">
+                        <div class="blog-category">Événements</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">1 Décembre 2024</span>
+                            <span class="blog-author">Par ketsia</span>
+                        </div>
+                        <h3>Formation maquillage</h3>
+                        <p>Devenez experte en maquillage en suvant notre formation annuelle en maquillage...</p>
+                        <a href="#" class="blog-read-more">Lire la suite</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="blog-pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">Suivant</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez Informée de Nos Derniers Articles</h2>
+                <p>Recevez nos conseils beauté et tendances coiffure directement dans votre boîte mail</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="btn btn-primary">S'abonner</button>
+                    </div>
+                    <p class="newsletter-note">Pas de spam, désinscription possible à tout moment</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ketsia Make-up Hair "KMH"</h3>
+                    <p>Le salon de coiffure féminin de référence à Kinshasa</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>Lundi - Vendredi: 8h00 - 18h00</li>
+                        <li>Samedi: 8h00 - 16h00</li>
+                        <li>Dimanche: Sur rendez-vous</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 C/Limete, Q/Mombele AV/Mombele 78, Kinshasa</li>
+                        <li>📞 +243 829525525</li>
+                        <li>✉️ contact@KMH.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ketsia Make-up Hair "KMH". Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+</html>
+

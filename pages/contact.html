@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Élégance Beauté | Salon de Coiffure à Kinshasa</title>
+    <meta name="description" content="Contactez Élégance Beauté, salon de coiffure féminin à Kinshasa. Adresse, téléphone, email et formulaire de contact. Avenue Kasa-Vubu.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="lg">
+                        <div class="photo1">
+                            <img class="photo" src="/salon-coiffure-kinshasa/assets/images/kmh.jpg" alt="kmh" width="40" height="40">
+                        </div>
+                        <h1>KMH</h1>
+                    </div>
+                <span>Salon de Coiffure <br>& maquillage</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="../index.html" >Accueil</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="rendez-vous.html">Rendez-vous</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="https://wa.me/2439525525" class="whatsapp-btn" target="_blank">
+                        <span>WhatsApp</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="nav-mobile" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/a-propos.html">À Propos</a></li>
+                <li><a href="pages/prestations.html">Prestations</a></li>
+                <li><a href="pages/galerie.html">Galerie</a></li>
+                <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                <li><a href="pages/rendez-vous.html">Rendez-vous</a></li>
+                <li><a href="pages/avis.html">Avis</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Nous Contacter</h1>
+                <p>Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Informations de Contact -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Adresse</h3>
+                    <p>Avenue Kasa-Vubu<br>Commune de Gombe<br>Kinshasa, RDC</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+2439525525">+243 819 525 525</a></p>
+                    <p><a href="tel:+243987654321">+243 812987008</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@kmh.com">contact@kmh.com</a></p>
+                    <p><a href="mailto:rdv@kmh.com">rdv@kmh.com</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Horaires</h3>
+                    <p>Lun - Ven: 8h00 - 18h00<br>Samedi: 8h00 - 16h00<br>Dimanche: Sur RDV</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire et Carte -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="contact-main-content">
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un Message</h2>
+                    <p>Vous avez une question ? N'hésitez pas à nous écrire, nous vous répondrons rapidement.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactFirstName">Prénom *</label>
+                                <input type="text" id="contactFirstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactLastName">Nom *</label>
+                                <input type="text" id="contactLastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactPhone">Téléphone</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Sujet *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="rdv">Prise de rendez-vous</option>
+                                <option value="info">Demande d'information</option>
+                                <option value="tarifs">Questions sur les tarifs</option>
+                                <option value="services">Nos services</option>
+                                <option value="reclamation">Réclamation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="contactConsent" name="consent" required>
+                                <span class="checkmark"></span>
+                                J'accepte que mes données soient utilisées pour me recontacter *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Envoyer le Message</span>
+                            <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="map-container">
+                    <h2>Nous Trouver</h2>
+                    <p>Situé au cœur de Kinshasa, dans la commune de Gombe</p>
+                    
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <div class="map-icon">🗺️</div>
+                            <h3>Élégance Beauté</h3>
+                            <p>Avenue Kasa-Vubu<br>Commune de Gombe<br>Kinshasa, RDC</p>
+                            <div class="map-actions">
+                                <a href="https://maps.google.com/?q=Avenue+Kasa-Vubu+Kinshasa" target="_blank" class="btn btn-secondary">
+                                    Ouvrir dans Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-details">
+                        <h4>Comment nous trouver ?</h4>
+                        <ul>
+                            <li>🚗 Parking disponible devant le salon</li>
+                            <li>🚌 Arrêt de bus à 100m (Ligne Gombe-Centre)</li>
+                            <li>🚶‍♀️ À 5 min à pied du marché central</li>
+                            <li>🏢 Face au bâtiment de la Banque Centrale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Moyens de Contact Rapide -->
+    <section class="quick-contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous Rapidement</h2>
+                <p>Choisissez le moyen de communication qui vous convient</p>
+            </div>
+            
+            <div class="quick-contact-grid">
+                <a href="tel:+243123456789" class="quick-contact-card">
+                    <div class="quick-contact-icon">📞</div>
+                    <h3>Appelez-nous</h3>
+                    <p>Réponse immédiate pendant nos heures d'ouverture</p>
+                    <span class="quick-contact-action">+243 123 456 789</span>
+                </a>
+                
+                <a href="https://wa.me/243123456789" class="quick-contact-card" target="_blank">
+                    <div class="quick-contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Messagerie instantanée, photos et rendez-vous</p>
+                    <span class="quick-contact-action">Ouvrir WhatsApp</span>
+                </a>
+                
+                <a href="mailto:contact@elegance-beaute.cd" class="quick-contact-card">
+                    <div class="quick-contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>Pour vos demandes détaillées et devis</p>
+                    <span class="quick-contact-action">Envoyer un email</span>
+                </a>
+                
+                <a href="rendez-vous.html" class="quick-contact-card">
+                    <div class="quick-contact-icon">📅</div>
+                    <h3>Rendez-vous en ligne</h3>
+                    <p>Réservez directement votre créneau</p>
+                    <span class="quick-contact-action">Réserver maintenant</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ Contact -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Les réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Quel est le meilleur moyen de vous contacter ?</h4>
+                    <p>Pour une réponse rapide, appelez-nous ou utilisez WhatsApp. Pour les demandes détaillées, préférez l'email ou le formulaire de contact.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Répondez-vous aux messages le dimanche ?</h4>
+                    <p>Nous consultons nos messages le dimanche mais les réponses détaillées sont traitées en priorité du lundi au samedi.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Puis-je venir sans rendez-vous ?</h4>
+                    <p>Nous acceptons les clientes sans rendez-vous selon nos disponibilités, mais nous recommandons fortement de réserver pour éviter l'attente.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Où puis-je me garer ?</h4>
+                    <p>Un parking gratuit est disponible devant le salon. En cas d'affluence, des places sont disponibles dans la rue adjacente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ketsia Make-up Hair "KMH"</h3>
+                    <p>Le salon de coiffure féminin de référence à Kinshasa</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>Lundi - Vendredi: 8h00 - 18h00</li>
+                        <li>Samedi: 8h00 - 16h00</li>
+                        <li>Dimanche: Sur rendez-vous</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 C/Limete, Q/Mombele AV/Mombele 78, Kinshasa</li>
+                        <li>📞 +243 829525525</li>
+                        <li>✉️ contact@KMH.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ketsia Make-up Hair "KMH". Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
+

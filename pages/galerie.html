@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Élégance Beauté | Nos Réalisations Coiffure à Kinshasa</title>
+    <meta name="description" content="Découvrez notre galerie de réalisations coiffure. Portfolio de nos plus belles créations, coupes modernes et coiffures événementielles à Kinshasa.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="lg">
+                        <div class="photo1">
+                            <img class="photo" src="/salon-coiffure-kinshasa/assets/images/kmh.jpg" alt="kmh" width="40" height="40">
+                        </div>
+                        <h1>KMH</h1>
+                    </div>
+                <span>Salon de Coiffure <br>& maquillage</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="../index.html" >Accueil</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="galerie.html" class="active">Galerie</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="rendez-vous.html">Rendez-vous</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <a href="https://wa.me/2439525525" class="whatsapp-btn" target="_blank">
+                        <span>WhatsApp</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="nav-mobile" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/a-propos.html">À Propos</a></li>
+                <li><a href="pages/prestations.html">Prestations</a></li>
+                <li><a href="pages/galerie.html">Galerie</a></li>
+                <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                <li><a href="pages/rendez-vous.html">Rendez-vous</a></li>
+                <li><a href="pages/avis.html">Avis</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Notre Galerie</h1>
+                <p>Découvrez nos plus belles réalisations et laissez-vous inspirer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Carrousel Principal -->
+    <section class="featured-carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Créations Vedettes</h2>
+                <p>Une sélection de nos plus belles réalisations</p>
+            </div>
+            
+            <div class="carousel-container" id="featuredCarousel">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <img src="../assets/images/1F.jpg" alt="Coiffure moderne élégante">
+                        <div class="carousel-caption">
+                            <h3>Coupe Moderne Sophistiquée</h3>
+                            <p>Une coupe courte moderne qui sublime la féminité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="../assets/images/4E.jpg" alt="Coiffure courte tendance">
+                        <div class="carousel-caption">
+                            <h3>Style Urbain Chic</h3>
+                            <p>Parfait équilibre entre modernité et élégance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="../assets/images/9C.jpg" alt="Tresses africaines modernes">
+                        <div class="carousel-caption">
+                            <h3>Tresses Africaines Contemporaines</h3>
+                            <p>L'art traditionnel revisité avec modernité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="../assets/images/8A.jpg" alt="Ambiance salon">
+                        <div class="carousel-caption">
+                            <h3>Ambiance Raffinée</h3>
+                            <p>Un cadre élégant pour votre expérience beauté</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-prev" aria-label="Image précédente">
+                    <span>‹</span>
+                </button>
+                <button class="carousel-btn carousel-next" aria-label="Image suivante">
+                    <span>›</span>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0"></button>
+                    <button class="carousel-indicator" data-slide="1"></button>
+                    <button class="carousel-indicator" data-slide="2"></button>
+                    <button class="carousel-indicator" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Filtres Galerie -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="coupes">Coupes</button>
+                <button class="filter-btn" data-filter="couleurs">Maquillage</button>
+                <button class="filter-btn" data-filter="evenements">Événements</button>
+                <button class="filter-btn" data-filter="tresses">Tresses</button>
+                <button class="filter-btn" data-filter="salon">Salon</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Coupes -->
+                <div class="gallery-item" data-category="coupes">
+                    <div class="gallery-image">
+                        <img src="../assets/images/9N.jpg" alt="Coupe moderne">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coupe Pixie Moderne</h4>
+                                <p>Coupe courte dynamique</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/9B.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="coupes">
+                    <div class="gallery-image">
+                        <img src="../assets/images/1N.jpg" alt="Coupe bob">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Bob Asymétrique</h4>
+                                <p>Tendance et sophistiqué</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_2.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tresses -->
+                <div class="gallery-item" data-category="tresses">
+                    <div class="gallery-image">
+                        <img src="../assets/images/8B.jpg" alt="Tresses africaines">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Tresses Protectrices</h4>
+                                <p>Art traditionnel moderne</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_africaine_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tresses">
+                    <div class="gallery-image">
+                        <img src="../assets/images/8.jpg" alt="Tresses africaines">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Tresses Protectrices</h4>
+                                <p>Art traditionnel moderne</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_africaine_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Salon -->
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="../assets/images/photo_salon.jpeg" alt="Intérieur salon">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Espace Coiffure</h4>
+                                <p>Ambiance moderne et chaleureuse</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/salon_elegant_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="../assets/images/salon_elegant_2.jpg" alt="Espace détente">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Espace Détente</h4>
+                                <p>Confort et élégance</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/salon_elegant_2.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="salon">
+                    <div class="gallery-image">
+                        <img src="../assets/images/salon_elegant_3.jpg" alt="Accueil salon">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Accueil VIP</h4>
+                                <p>Premier contact raffiné</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/salon_elegant_3.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Événements -->
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-image">
+                        <img src="../assets/images/11.jpg" alt="Coiffure mariage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coiffure de Mariage</h4>
+                                <p>Élégance pour votre jour J</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-image">
+                        <img src="../assets/images/4E.jpg" alt="Coiffure soirée">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Style Soirée</h4>
+                                <p>Glamour et sophistication</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_2.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-image">
+                        <img src="../assets/images/1D.jpg" alt="Coiffure mariage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coiffure de Mariage</h4>
+                                <p>Élégance pour votre jour J</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="evenements">
+                    <div class="gallery-image">
+                        <img src="../assets/images/3E.jpg" alt="Coiffure soirée">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Style Soirée</h4>
+                                <p>Glamour et sophistication</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_2.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Couleurs -->
+                 <div class="gallery-item" data-category="couleurs">
+                    <div class="gallery-image">
+                        <img src="../assets/images/6.jpg" alt="Coiffure mariage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coiffure de Mariage</h4>
+                                <p>Élégance pour votre jour J</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="couleurs">
+                    <div class="gallery-image">
+                        <img src="../assets/images/3.jpg" alt="Coiffure soirée">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Style Soirée</h4>
+                                <p>Glamour et sophistication</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_2.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="couleurs">
+                    <div class="gallery-image">
+                        <img src="../assets/images/1T.jpg" alt="Coiffure mariage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coiffure de Mariage</h4>
+                                <p>Élégance pour votre jour J</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="couleurs">
+                    <div class="gallery-image">
+                        <img src="../assets/images/2.jpg" alt="Coiffure mariage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coiffure de Mariage</h4>
+                                <p>Élégance pour votre jour J</p>
+                            </div>
+                            <button class="gallery-zoom" data-image="../assets/images/coiffure_moderne_1.jpg">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Zoom -->
+    <div class="modal-zoom" id="zoomModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img src="" alt="" id="zoomImage">
+        </div>
+    </div>
+
+    <!-- Section Instagram Style -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Suivez-nous sur Instagram</h2>
+                <p>Découvrez nos dernières créations et tendances</p>
+            </div>
+            
+            <div class="instagram-grid">
+                <div class="instagram-post">
+                    <img src="../assets/images/10C.jpg" alt="Post Instagram">
+                    <div class="instagram-overlay">
+                        <div class="instagram-stats">
+                            <span>❤️ 127</span>
+                            <span>💬 15</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-post">
+                    <img src="../assets/images/7A.jpg" alt="Post Instagram">
+                    <div class="instagram-overlay">
+                        <div class="instagram-stats">
+                            <span>❤️ 89</span>
+                            <span>💬 8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-post">
+                    <img src="../assets/images/coiffure_africaine_1.jpg" alt="Post Instagram">
+                    <div class="instagram-overlay">
+                        <div class="instagram-stats">
+                            <span>❤️ 156</span>
+                            <span>💬 23</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-post">
+                    <img src="../assets/images/3A.jpg" alt="Post Instagram">
+                    <div class="instagram-overlay">
+                        <div class="instagram-stats">
+                            <span>❤️ 94</span>
+                            <span>💬 12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-cta">
+                <a href="#" class="btn btn-primary">Suivre @ketsia Make-up Hair "kinshasa"</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Inspirée par Nos Créations ?</h2>
+                <p>Prenez rendez-vous et laissez nos expertes créer votre look unique</p>
+                <div class="cta-actions">
+                    <a href="rendez-vous.html" class="btn btn-primary">Prendre Rendez-vous</a>
+                    <a href="prestations.html" class="btn btn-secondary">Voir Nos Prestations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ketsia Make-up Hair "KMH"</h3>
+                    <p>Le salon de coiffure féminin de référence à Kinshasa</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>📍 C/Limete, Q/Mombele AV/Mombele 78, Kinshasa</li>
+                        <li>📞 +243 829525525</li>
+                        <li>✉️ contact@KMH.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 Avenue Kasa-Vubu, Kinshasa</li>
+                        <li>📞 +243 123 456 789</li>
+                        <li>✉️ contact@elegance-beaute.cd</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ketsia Make-up Hair "KMH". Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/galerie.js"></script>
+</body>
+</html>
+
