@@ -281,49 +281,17 @@
                 <p>Votre avis nous aide à nous améliorer et guide d'autres clientes</p>
                 
                 <form class="review-form" id="reviewForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="reviewName">Votre Prénom *</label>
-                            <input type="text" id="reviewName" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="reviewEmail">Email (Optionnel)</label>
-                            <input type="email" id="reviewEmail" name="email">
-                        </div>
+                    <div class="form-group">
+                        <label for="reviewerName">Votre Prénom *</label>
+                        <input type="text" id="reviewerName" name="reviewerName" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="reviewService">Service Reçu</label>
-                        <select id="reviewService" name="service">
-                            <option value="">Sélectionnez un service</option>
-                            <option value="coupe">Coupe</option>
-                            <option value="coloration">Coloration</option>
-                            <option value="soins">Soins</option>
-                            <option value="tresses">Tresses</option>
-                            <option value="extensions">Extensions</option>
-                            <option value="evenement">Événement</option>
-                        </select>
+                        <label for="testimonialText">Votre Témoignage *</label>
+                        <textarea id="testimonialText" name="testimonialText" rows="4" required></textarea>
                     </div>
                     
-                    <div class="form-group">
-                        <label>Votre Note *</label>
-                        <div class="rating-input" id="ratingInput">
-                            <span class="rating-star" data-rating="1">★</span>
-                            <span class="rating-star" data-rating="2">★</span>
-                            <span class="rating-star" data-rating="3">★</span>
-                            <span class="rating-star" data-rating="4">★</span>
-                            <span class="rating-star" data-rating="5">★</span>
-                        </div>
-                        <input type="hidden" id="rating" name="rating" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="reviewComment">Votre Commentaire *</label>
-                        <textarea id="reviewComment" name="comment" rows="4" placeholder="Partagez votre expérience..." required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Publier Mon Avis</button>
+                    <button type="submit" class="btn btn-primary">Soumettre le Témoignage</button>
                 </form>
             </div>
         </div>
