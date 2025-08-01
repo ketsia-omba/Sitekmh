@@ -283,12 +283,25 @@
                 <form class="review-form" id="reviewForm">
                     <div class="form-group">
                         <label for="reviewerName">Votre Prénom *</label>
-                        <input type="text" id="reviewerName" name="reviewerName" required>
+                        <input type="text" id="reviewerName" name="reviewerName" placeholder="Votre prénom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewService">Service Reçu</label>
+                        <select id="reviewService" name="reviewService">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="coupe">Coupe</option>
+                            <option value="coloration">Coloration</option>
+                            <option value="soins">Soins</option>
+                            <option value="tresses">Tresses</option>
+                            <option value="extensions">Extensions</option>
+                            <option value="evenement">Événement</option>
+                        </select>
                     </div>
                     
                     <div class="form-group">
                         <label for="testimonialText">Votre Témoignage *</label>
-                        <textarea id="testimonialText" name="testimonialText" rows="4" required></textarea>
+                        <textarea id="testimonialText" name="testimonialText" rows="4" placeholder="Partagez votre expérience..." required></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Soumettre le Témoignage</button>

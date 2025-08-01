@@ -5,11 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
 
             const reviewerName = document.getElementById("reviewerName").value;
+            const reviewService = document.getElementById("reviewService").value;
             const testimonialText = document.getElementById("testimonialText").value;
 
             if (reviewerName && testimonialText) {
                 const phoneNumber = "+243894984591"; // Numéro de téléphone WhatsApp
-                const message = `Nouveau témoignage de ${reviewerName}:\n\n"${testimonialText}"`;
+                let message = `Nouveau témoignage de ${reviewerName}:\n`;
+                if (reviewService) {
+                    message += `Service: ${reviewService}\n`;
+                }
+                message += `\n"${testimonialText}"`;
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
                 window.open(whatsappUrl, "_blank");
