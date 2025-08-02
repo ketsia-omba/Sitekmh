@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const testimonialText = document.getElementById("testimonialText").value;
 
             if (reviewerName && testimonialText) {
-                console.log("Formulaire valide. Tentative d'ouverture WhatsApp.");
                 const phoneNumber = "+243894984591"; // Numéro de téléphone WhatsApp
                 let message = `Nouveau témoignage de ${reviewerName}:\n`;
                 if (reviewService) {
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 message += `\n"${testimonialText}"`;
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                console.log("URL WhatsApp générée:", whatsappUrl);
 
                 window.open(whatsappUrl, "_blank");
 
@@ -25,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 reviewForm.reset();
                 alert("Votre témoignage a été envoyé via WhatsApp. Merci !");
             } else {
-                console.log("Formulaire invalide. Champs manquants.");
                 alert("Veuillez remplir tous les champs obligatoires (Prénom et Témoignage).");
             }
         });
