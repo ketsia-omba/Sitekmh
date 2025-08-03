@@ -126,73 +126,39 @@ function showFormError(message) {
         errorDiv.className = 'form-error';
         document.querySelector('.review-form').prepend(errorDiv);
     }
-    
-    errorDiv.textContent = message;
-    errorDiv.style.display = 'block';
-    
-    // Masquer après 5 secondes
-    setTimeout(() => {
-        errorDiv.style.display = 'none';
-    }, 5000);
-}
-
-function showReviewSuccess(data) {
-    const modal = document.createElement('div');
-    modal.className = 'review-success-modal';
-    modal.innerHTML = `
-        <div class="modal-content">
-            <div class="success-icon">✅</div>
-            <h3>Merci ${data.name} !</h3>
-            <p>Votre avis a été soumis avec succès.</p>
-            <div class="review-preview">
-                <div class="preview-rating">
-                    ${generateStarsHTML(data.rating)}
-                </div>
-                <p class="preview-comment">"${data.comment}"</p>
-            </div>
-            <p class="success-note">Votre avis sera publié après modération.</p>
-            <button class="btn btn-primary" onclick="closeReviewModal()">Parfait !</button>
-        </div>
-    `;
-    
-    document.body.appendChild(modal);
-    document.body.style.overflow = 'hidden';
-    
-    setTimeout(() => {
-        modal.classList.add('active');
-    }, 100);
-}
-
-function closeReviewModal() {
-    const modal = document.querySelector('.review-success-modal');
-    if (modal) {
-        modal.classList.remove('active');
-        setTimeout(() => {
-            modal.remove();
-            document.body.style.overflow = '';
-        }, 300);
-    }
-}
-
-function resetRatingStars() {
-    const ratingStars = document.querySelectorAll('.rating-star');
-    ratingStars.forEach(star => {
-        star.classList.remove('filled');
-    });
-}
-
-function generateStarsHTML(rating) {
-    let starsHTML = '';
-    for (let i = 1; i <= 5; i++) {
-        if (i <= rating) {
-            starsHTML += '<span class="star filled">★</span>';
-        } else {
-            starsHTML += '<span class="star">★</span>';
-        }
-    }
-    return starsHTML;
-}
-
+// Nv formulaire 
+    ‎document.addEventListener("DOMContentLoaded", function() {
+‎    const reviewForm = document.getElementById("reviewForm");
+‎    if (reviewForm) {
+‎        reviewForm.addEventListener("submit", function(e) {
+‎            e.preventDefault();
+‎
+‎            const reviewerName = document.getElementById("reviewerName").value;
+‎            const reviewService = document.getElementById("reviewService").value;
+‎            const testimonialText = document.getElementById("testimonialText").value;
+‎
+‎            if (reviewerName && testimonialText) {
+‎                const phoneNumber = "+243894984591"; // Numéro de téléphone WhatsApp
+‎                let message = `Nouveau témoignage de ${reviewerName}:\n`;
+‎                if (reviewService) {
+‎                    message += `Service: ${reviewService}\n`;
+‎                }
+‎                message += `\n"${testimonialText}"`;
+‎                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+‎
+‎                window.open(whatsappUrl, "_blank");
+‎
+‎                // Optionnel: Réinitialiser le formulaire après soumission
+‎                reviewForm.reset();
+‎                alert("Votre témoignage a été envoyé via WhatsApp. Merci !");
+‎            } else {
+‎                alert("Veuillez remplir tous les champs obligatoires (Prénom et Témoignage).");
+‎            }
+‎        });
+‎    }
+‎});
+‎
+‎
 // ===== PAGINATION =====
 function initializePagination() {
     const paginationBtns = document.querySelectorAll('.pagination-btn');
