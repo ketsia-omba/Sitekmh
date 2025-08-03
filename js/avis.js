@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const reviewForm = document.getElementById('reviewForm');
     if (reviewForm) {
         reviewForm.addEventListener('submit', function(e) {
@@ -23,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+/*
 
 
