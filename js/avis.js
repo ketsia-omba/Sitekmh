@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeReviewForm();
     initializePagination();
 });
-
+/*
 // ===== SYSTÈME D'ÉTOILES =====
 function initializeRatingInput() {
     const ratingStars = document.querySelectorAll('.rating-star');
@@ -126,6 +126,7 @@ function showFormError(message) {
         errorDiv.className = 'form-error';
         document.querySelector('.review-form').prepend(errorDiv);
     }
+    */
 // Nv formulaire 
     ‎document.addEventListener("DOMContentLoaded", function() {
 ‎    const reviewForm = document.getElementById("reviewForm");
