@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ===== SYSTÈME D'ÉTOILES =====
-/*
+
 function initializeRatingInput() {
     const ratingStars = document.querySelectorAll('.rating-star');
     const ratingInput = document.getElementById('rating');
@@ -46,6 +46,7 @@ function initializeRatingInput() {
 }
 
 // ===== FORMULAIRE D'AVIS =====
+/*
 function initializeReviewForm() {
     const form = document.getElementById('reviewForm');
     
