@@ -46,7 +46,7 @@ function initializeRatingInput() {
 }
 
 // ===== FORMULAIRE D'AVIS =====
-/*
+
 function initializeReviewForm() {
     const form = document.getElementById('reviewForm');
     
@@ -128,7 +128,7 @@ function showFormError(message) {
         errorDiv.className = 'form-error';
         document.querySelector('.review-form').prepend(errorDiv);
     }
-    */
+    
 // Nv formulaire 
     ‎document.addEventListener("DOMContentLoaded", function() {
 ‎    const reviewForm = document.getElementById("reviewForm");
