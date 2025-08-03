@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeReviewForm();
     initializePagination();
 });
-/*
+
 // ===== SYSTÈME D'ÉTOILES =====
+/*
 function initializeRatingInput() {
     const ratingStars = document.querySelectorAll('.rating-star');
     const ratingInput = document.getElementById('rating');
